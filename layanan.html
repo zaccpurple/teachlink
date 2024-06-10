@@ -1,0 +1,751 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Techlink</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+
+<body>
+  <div class="container-fluid p-0" style="background-color: transparent;">
+    <a href="/claim" class="d-block">
+      <img src="/img/Ads.png" alt="Ads Banner" class="img-fluid w-100">
+    </a>
+  </div>
+
+  <nav class="navbar navbar-expand-lg bg-body-white">
+    <div class="container">
+      <a class="navbar-brand" href="#">
+        <img src="/img/logo-teachlink.png" alt="" width="160">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+        <ul class="navbar-nav gap-5">
+          <li class="nav-item">
+            <a class="nav-link text-blue-5 active" aria-current="page" href="#"><b>Beranda</b></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"><b>Tentang Kami</b></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"><b>Layanan</b></a>
+          </li>
+        </ul>
+      </div>
+      <div class="d-flex ms-auto">
+        <div class="dropdown">
+          <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <i class="bi bi-globe me-2"></i> <b>Bahasa</b>
+          </button>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Indonesia</a></li>
+            <li><a class="dropdown-item" href="#">Inggris</a></li>
+          </ul>
+        </div>
+        <div class="dropdown">
+          <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <b>Salsa</b>
+          </button>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Akun</a></li>
+            <li><a class="dropdown-item" href="#">Transaksi</a></li>
+            <li><a class="dropdown-item" href="#">Logout</a></li>
+          </ul>
+        </div>
+        <a class="btn text-blue-5" href="masuk.html" role="button"><b>For Mentor</b></a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section>
+    <div class="container-fluid p-0 d-flex flex-column justify-content-center"
+      style="background-image: url('/img/hero-layanan.png'); background-size: cover; background-repeat: no-repeat; background-position: center; height: 400px;">
+      <div class="container text-start">
+        <div class="col-6 text-white">
+          <h2 class="mb-4"><i><b>Belajar yang asik <br>
+                Tentunya bersama Teachlink!</b></i>
+          </h2>
+          <p>Pilih TechLink sebagai solusi belajarmu. <br>
+            Buat Pembelajaran Menjadi Menyenangkan dan Buktikan Efektivitasnya.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Rekomendasi Mentor -->
+  <div class="container-fluid py-5"
+    style="background-image: url('/img/bg-layanan.png'); background-size: cover; background-repeat: no-repeat; background-position: center; border-radius: 27px; margin-top: -20px ;">
+    <section class="py-5 container">
+      <div class="row justify-content-center py-5">
+        <div class="col-md-3">
+          <!-- card-1 -->
+          <div class="card shadow" style="width: 15rem; border-radius: 20px;">
+            <div class="card-body m-3">
+              <img src="/img/mentor-1.png" width="100px" alt="" style="margin-top: -90px;">
+              <h5 class="card-title py-3"><b>Rekomendasi <br> Mentor</b></h5>
+              <p class="card-text" style="font-size: 12px;">Lengkapi data diri kamu atau mulai mencari mentor untuk
+                mendapatkan rekomendasi mentor sesuai kebutuhan kamu.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <!-- card-2 -->
+          <div class="card shadow" style="width: 15rem; border-radius: 20px;">
+            <div class="card-body m-3">
+              <img src="/img/mentor-2.png" width="100px" alt="" style="margin-top: -90px;">
+              <h5 class="card-title py-3"><b>Mentor <br> Favorite</b></h5>
+              <p class="card-text" style="font-size: 12px;">Bintangi mentor favorit atau incaran kamu agar kamu dapat
+                melakukan sesi belajar dengan mentor tersebut nanti.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <!-- card-3 -->
+          <div class="card shadow" style="width: 15rem; border-radius: 20px;">
+            <div class="card-body m-3">
+              <img src="/img/mentor-3.png" width="100px" alt="" style="margin-top: -90px;">
+              <h5 class="card-title py-3"><b>Techplus <br> (Poin)</b></h5>
+              <p class="card-text" style="font-size: 12px;">Kumpulkan poin yang kamu dapatkan setiap selesai melakukan
+                pemesanan dan tukar untuk mendapatkan voucher promo menarik.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Pesan Mentor -->
+    <div class="container">
+      <div class="row my-5 px-5 justify-content-center">
+        <div class="col-md-10">
+          <h2 class="my-3"><b># Bingung cara pesan mentor?</b></h2>
+          <h3>Yuk Min-Tech ajarin!</h3>
+        </div>
+      </div>
+
+      <div class="row my-5">
+        <div class="col-md d-flex justify-content-center">
+          <img src="/img/panduan.png" class="img-fluid" alt="" width="80%">
+        </div>
+      </div>
+    </div>
+
+    <!-- Pilih yang terbaik -->
+    <div class="row text-center" style="margin-top: 100px;">
+      <h3 class="py-3">#Pilih yang terbaik supaya belajarmu jadi asik!</h3>
+    </div>
+
+    <div class="container">
+      <div class="row my-4 justify-content-center">
+        <div class="col-md-4 d-flex justify-content-center">
+          <a href="#">
+            <img src="/img/tech-mentor.png" class="img-fluid" alt="">
+          </a>
+        </div>
+
+        <div class="col-md-4 d-flex justify-content-center">
+          <a href="#">
+            <img src="/img/tech-tutor.png" class="img-fluid" alt="">
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container-fluid py-5"
+    style="background-image: linear-gradient(to bottom right, #9AC2F6, #1877F2); margin-top: -20px;">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <img src="/img/icon-layanan.png" alt="" width="90%">
+        </div>
+        <div class="col-md-6 text-white d-flex flex-column align-items-center justify-content-center">
+          <div>
+            <h3><b>Teachbot menunggu jadwal <br> belajarmu</b></h3>
+            <h4 class="py-4">Teachbot sudah buatin tempat buat sahabat Tech-verse ngatur jadwal biar belajar jadi
+              efisien, cobain deh fiturnya.</h4>
+            <button type="button" class="btn btn-light px-4 py-2 text-blue-4 rounded-pill"><b>Segera Datang</b></button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <section>
+    <div class="container-fluid p-0 d-flex flex-column justify-content-center"
+      style="background-image: url('/img/bg-layanan2.png'); background-size: cover; background-repeat: no-repeat; background-position: center;">
+      <div class="container text-start">
+        <div class="row mt-5 py-4">
+          <div class="col-md text-center">
+            <h2 class="mb-3"><b>Paket Belajar Teachlink</b>
+            </h2>
+            <p>#Nikmati suasana pembelajaran dengan cara yang baru bersama Tech-mentor </p>
+          </div>
+        </div>
+
+        <div class="row justify-content-center my-4">
+          <div class="col-md d-flex justify-content-center align-items-center">
+            <div class="card shadow m-4" style="width: 22rem; border-radius: 30px;">
+              <div class="card-body container-fluid"
+                style="background-image: url('/img/img-card.png'); background-size: cover; background-repeat: no-repeat; background-position: center; border-radius: 30px;">
+                <div class="row align-items-center mt-3 p-3">
+                  <div class="col-md-4 d-flex justify-content-center mx-2">
+                    <img src="/img/Conical Flask.png" alt="" width="80px">
+                  </div>
+                  <div class="col-md-7 d-flex flex-column justify-content-center" style="padding-left: 20px;">
+                    <p style="font-size: 14px; margin: 0px;"><b>Mata Pelajaran</b></p>
+                    <p style="font-size: 32px; margin: 0px;"><b>Kimia</b></p>
+                  </div>
+                </div>
+                <div class="row p-3 mb-5" style="margin-top: -10px;">
+                  <p style="font-size: 12px; margin: 0px;">Jelajahi dunia kimia! Temukan keajaiban reaksi kimia dan
+                    pahami prinsip-prinsip dasarnya melalui eksperimen praktis.</p>
+                </div>
+              </div>
+
+              <div class="card-body container-fluid p-4"
+                style="background-color: white; border-radius: 22px; margin-top: -50px;">
+                <div class="row align-items-center p-2">
+                  <p style="font-size: 12px; margin: 0px;">Paket Tahun Ajaran 2024/2025 <br> Mulai dari</p>
+                  <p style="font-size: 25px; margin: 0px; margin-bottom: -10px;">Rp 500.000/bulan</p>
+                </div>
+                <div class="row p-3">
+                  <button type="submit" class="btn btn-primary"
+                    style="background-image: linear-gradient(to right, #A3CCF5 , #2B75C0); border: 0px; border-radius: 50px; padding: 10px 30px 10px 30px; ;"><b>Beli</b></button>
+                </div>
+                <div class="row pb-3">
+                  <div class="d-flex align-items-center" style="margin-top: -5px;">
+                    <i class="bi bi-check fs-4 text-green" style="padding: 0px;"></i>
+                    <p style="font-size: 14px; margin: 0px; padding-left: 8px;">Bebas memilih mentor</p>
+                  </div>
+                  <div class="d-flex align-items-center" style="margin-top: -5px;">
+                    <i class="bi bi-check fs-4 text-green" style="padding: 0px;"></i>
+                    <p style="font-size: 14px; margin: 0px; padding-left: 8px;">5 kali pertemuan dalam 1 bulan</p>
+                  </div>
+                  <div class="d-flex align-items-center" style="margin-top: -5px;">
+                    <i class="bi bi-check fs-4 text-green" style="padding: 0px;"></i>
+                    <p style="font-size: 14px; margin: 0px; padding-left: 8px;">Menentukan jadwal les sesuai keinginan
+                      anda</p>
+                  </div>
+                  <div class="d-flex align-items-center" style="margin-top: -5px;">
+                    <i class="bi bi-check fs-4 text-green" style="padding: 0px;"></i>
+                    <p style="font-size: 14px; margin: 0px; padding-left: 8px;">Sesi praktikum reaksi kimia 1 kali</p>
+                  </div>
+                  <div class="d-flex align-items-center" style="margin-top: -5px;">
+                    <i class="bi bi-check fs-4 text-green" style="padding: 0px;"></i>
+                    <p style="font-size: 14px; margin: 0px; padding-left: 8px;">Sesi Intensif 1 kali saat UTS atau UAS
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md d-flex justify-content-center align-items-center">
+            <div class="card shadow m-4" style="width: 22rem; border-radius: 30px;">
+              <div class="card-body container-fluid"
+                style="background-image: url('/img/img-card.png'); background-size: cover; background-repeat: no-repeat; background-position: center; border-radius: 30px;">
+                <div class="row align-items-center mt-3 p-3">
+                  <div class="col-md-4 d-flex justify-content-center mx-2">
+                    <img src="/img/biologi.png" alt="" width="80px">
+                  </div>
+                  <div class="col-md-7 d-flex flex-column justify-content-center" style="padding-left: 20px;">
+                    <p style="font-size: 14px; margin: 0px;"><b>Mata Pelajaran</b></p>
+                    <p style="font-size: 32px; margin: 0px;"><b>Biologi</b></p>
+                  </div>
+                </div>
+                <div class="row p-3 mb-5" style="margin-top: -10px;">
+                  <p style="font-size: 12px; margin: 0px;">Telusuri rahasia kehidupan! Pahami proses-proses biologis
+                    yang kompleks melalui pendekatan praktis & diskusi yang mendalam.</p>
+                </div>
+              </div>
+
+              <div class="card-body container-fluid p-4"
+                style="background-color: white; border-radius: 22px; margin-top: -50px;">
+                <div class="row align-items-center p-2">
+                  <p style="font-size: 12px; margin: 0px;">Paket Tahun Ajaran 2024/2025 <br> Mulai dari</p>
+                  <p style="font-size: 25px; margin: 0px; margin-bottom: -10px;">Rp 550.000/bulan</p>
+                </div>
+                <div class="row p-3">
+                  <button type="submit" class="btn btn-primary"
+                    style="background-image: linear-gradient(to right, #A3CCF5 , #2B75C0); border: 0px; border-radius: 50px; padding: 10px 30px 10px 30px; ;"><b>Beli</b></button>
+                </div>
+                <div class="row pb-3">
+                  <div class="d-flex align-items-center" style="margin-top: -5px;">
+                    <i class="bi bi-check fs-4 text-green" style="padding: 0px;"></i>
+                    <p style="font-size: 14px; margin: 0px; padding-left: 8px;">Bebas memilih mentor</p>
+                  </div>
+                  <div class="d-flex align-items-center" style="margin-top: -5px;">
+                    <i class="bi bi-check fs-4 text-green" style="padding: 0px;"></i>
+                    <p style="font-size: 14px; margin: 0px; padding-left: 8px;">5 kali pertemuan dalam 1 bulan</p>
+                  </div>
+                  <div class="d-flex align-items-center" style="margin-top: -5px;">
+                    <i class="bi bi-check fs-4 text-green" style="padding: 0px;"></i>
+                    <p style="font-size: 14px; margin: 0px; padding-left: 8px;">Menentukan jadwal les sesuai keinginan
+                      anda</p>
+                  </div>
+                  <div class="d-flex align-items-center" style="margin-top: -5px;">
+                    <i class="bi bi-check fs-4 text-green" style="padding: 0px;"></i>
+                    <p style="font-size: 14px; margin: 0px; padding-left: 8px;">Sesi Intensif 1 kali saat UTS atau UAS
+                    </p>
+                  </div>
+                  <div class="d-flex align-items-center" style="margin-top: -5px;">
+                    <i class="bi bi-check fs-4 text-green" style="padding: 0px;"></i>
+                    <p style="font-size: 14px; margin: 0px; padding-left: 8px;">Sesi praktikum anatomi 1 kali</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md d-flex justify-content-center align-items-center">
+            <div class="card shadow m-4" style="width: 22rem; border-radius: 30px;">
+              <div class="card-body container-fluid"
+                style="background-image: url('/img/img-card.png'); background-size: cover; background-repeat: no-repeat; background-position: center; border-radius: 30px;">
+                <div class="row align-items-center mt-3 p-3">
+                  <div class="col-md-4 d-flex justify-content-center mx-2">
+                    <img src="/img/fisika.png" alt="" width="80px">
+                  </div>
+                  <div class="col-md-7 d-flex flex-column justify-content-center" style="padding-left: 20px;">
+                    <p style="font-size: 14px; margin: 0px;"><b>Mata Pelajaran</b></p>
+                    <p style="font-size: 32px; margin: 0px;"><b>Fisika</b></p>
+                  </div>
+                </div>
+                <div class="row p-3 mb-5" style="margin-top: -10px;">
+                  <p style="font-size: 12px; margin: 0px;">Temukan teori ruang dan waktu! Pelajari konsep-konsep
+                    fundamental fisika dan terapkan dalam eksperimen yang mendalam.</p>
+                </div>
+              </div>
+
+              <div class="card-body container-fluid p-4"
+                style="background-color: white; border-radius: 22px; margin-top: -50px;">
+                <div class="row align-items-center p-2">
+                  <p style="font-size: 12px; margin: 0px;">Paket Tahun Ajaran 2024/2025 <br> Mulai dari</p>
+                  <p style="font-size: 25px; margin: 0px; margin-bottom: -10px;">Rp 450.000/bulan</p>
+                </div>
+                <div class="row p-3">
+                  <button type="submit" class="btn btn-primary"
+                    style="background-image: linear-gradient(to right, #A3CCF5 , #2B75C0); border: 0px; border-radius: 50px; padding: 10px 30px 10px 30px; ;"><b>Beli</b></button>
+                </div>
+                <div class="row pb-3">
+                  <div class="d-flex align-items-center" style="margin-top: -5px;">
+                    <i class="bi bi-check fs-4 text-green" style="padding: 0px;"></i>
+                    <p style="font-size: 14px; margin: 0px; padding-left: 8px;">Bebas memilih mentor</p>
+                  </div>
+                  <div class="d-flex align-items-center" style="margin-top: -5px;">
+                    <i class="bi bi-check fs-4 text-green" style="padding: 0px;"></i>
+                    <p style="font-size: 14px; margin: 0px; padding-left: 8px;">5 kali pertemuan dalam 1 bulan</p>
+                  </div>
+                  <div class="d-flex align-items-center" style="margin-top: -5px;">
+                    <i class="bi bi-check fs-4 text-green" style="padding: 0px;"></i>
+                    <p style="font-size: 14px; margin: 0px; padding-left: 8px;">Menentukan jadwal les sesuai keinginan
+                      anda</p>
+                  </div>
+                  <div class="d-flex align-items-center" style="margin-top: -5px;">
+                    <i class="bi bi-check fs-4 text-green" style="padding: 0px;"></i>
+                    <p style="font-size: 14px; margin: 0px; padding-left: 8px;">Sesi pratikum untuk penerapan materi 1
+                      kali</p>
+                  </div>
+                  <div class="d-flex align-items-center" style="margin-top: -5px;">
+                    <i class="bi bi-check fs-4 text-green" style="padding: 0px;"></i>
+                    <p style="font-size: 14px; margin: 0px; padding-left: 8px;">Sesi Intensif 1 kali saat UTS atau UAS
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- row 2 -->
+        <div class="row justify-content-center my-4">
+          <div class="col-md d-flex justify-content-center align-items-center">
+            <div class="card shadow m-4" style="width: 22rem; border-radius: 30px;">
+              <div class="card-body container-fluid"
+                style="background-image: url('/img/img-card.png'); background-size: cover; background-repeat: no-repeat; background-position: center; border-radius: 30px;">
+                <div class="row align-items-center mt-3 p-3">
+                  <div class="col-md-4 d-flex justify-content-center mx-2">
+                    <img src="/img/geography.png" alt="" width="80px">
+                  </div>
+                  <div class="col-md-7 d-flex flex-column justify-content-center" style="padding-left: 20px;">
+                    <p style="font-size: 14px; margin: 0px;"><b>Mata Pelajaran</b></p>
+                    <p style="font-size: 32px; margin: 0px;"><b>Geografi</b></p>
+                  </div>
+                </div>
+                <div class="row p-3 mb-5" style="margin-top: -10px;">
+                  <p style="font-size: 12px; margin: 0px;">Pahami ragam dunia! Pelajari tentang fenomena alam & budaya
+                    di berbagai belahan dunia, dan pahami dampaknya secara global.</p>
+                </div>
+              </div>
+
+              <div class="card-body container-fluid p-4"
+                style="background-color: white; border-radius: 22px; margin-top: -50px;">
+                <div class="row align-items-center p-2">
+                  <p style="font-size: 12px; margin: 0px;">Paket Tahun Ajaran 2024/2025 <br> Mulai dari</p>
+                  <p style="font-size: 25px; margin: 0px; margin-bottom: -10px;">Rp 380.000/bulan</p>
+                </div>
+                <div class="row p-3">
+                  <button type="submit" class="btn btn-primary"
+                    style="background-image: linear-gradient(to right, #A3CCF5 , #2B75C0); border: 0px; border-radius: 50px; padding: 10px 30px 10px 30px; ;"><b>Beli</b></button>
+                </div>
+                <div class="row pb-3">
+                  <div class="d-flex align-items-center" style="margin-top: -5px;">
+                    <i class="bi bi-check fs-4 text-green" style="padding: 0px;"></i>
+                    <p style="font-size: 14px; margin: 0px; padding-left: 8px;">Bebas memilih mentor</p>
+                  </div>
+                  <div class="d-flex align-items-center" style="margin-top: -5px;">
+                    <i class="bi bi-check fs-4 text-green" style="padding: 0px;"></i>
+                    <p style="font-size: 14px; margin: 0px; padding-left: 8px;">6 kali pertemuan dalam 1 bulan</p>
+                  </div>
+                  <div class="d-flex align-items-center" style="margin-top: -5px;">
+                    <i class="bi bi-check fs-4 text-green" style="padding: 0px;"></i>
+                    <p style="font-size: 14px; margin: 0px; padding-left: 8px;">Sesi Intensif 1 kali saat UTS atau UAS
+                    </p>
+                  </div>
+                  <div class="d-flex align-items-center" style="margin-top: -5px;">
+                    <i class="bi bi-check fs-4 text-green" style="padding: 0px;"></i>
+                    <p style="font-size: 14px; margin: 0px; padding-left: 8px;">Menentukan jadwal les sesuai keinginan
+                      anda</p>
+                  </div>
+                  <div class="d-flex align-items-center" style="margin-top: -5px;">
+                    <i class="bi bi-check fs-4 text-green" style="padding: 0px;"></i>
+                    <p style="font-size: 14px; margin: 0px; padding-left: 8px;">Penerapan konsep ekonomi pada kegiatan
+                      sehari-hari</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md d-flex justify-content-center align-items-center">
+            <div class="card shadow m-4" style="width: 22rem; border-radius: 30px;">
+              <div class="card-body container-fluid"
+                style="background-image: url('/img/img-card.png'); background-size: cover; background-repeat: no-repeat; background-position: center; border-radius: 30px;">
+                <div class="row align-items-center mt-3 p-3">
+                  <div class="col-md-4 d-flex justify-content-center mx-2">
+                    <img src="/img/Accounting.png" alt="" width="70px">
+                  </div>
+                  <div class="col-md-7 d-flex flex-column justify-content-center" style="padding-left: 20px;">
+                    <p style="font-size: 14px; margin: 0px;"><b>Mata Pelajaran</b></p>
+                    <p style="font-size: 31px; margin: 0px;"><b>Ekonomi</b></p>
+                  </div>
+                </div>
+                <div class="row p-3 mb-5" style="margin-top: -10px;">
+                  <p style="font-size: 12px; margin: 0px;">Telusuri dinamika ekonomi dengan mentor ahli! Pelajari
+                    prinsip-prinsip dasar dan aplikasikan dalam situasi nyata!</p>
+                </div>
+              </div>
+
+              <div class="card-body container-fluid p-4"
+                style="background-color: white; border-radius: 22px; margin-top: -50px;">
+                <div class="row align-items-center p-2">
+                  <p style="font-size: 12px; margin: 0px;">Paket Tahun Ajaran 2024/2025 <br> Mulai dari</p>
+                  <p style="font-size: 25px; margin: 0px; margin-bottom: -10px;">Rp 410.000/bulan</p>
+                </div>
+                <div class="row p-3">
+                  <button type="submit" class="btn btn-primary"
+                    style="background-image: linear-gradient(to right, #A3CCF5 , #2B75C0); border: 0px; border-radius: 50px; padding: 10px 30px 10px 30px; ;"><b>Beli</b></button>
+                </div>
+                <div class="row pb-3">
+                  <div class="d-flex align-items-center" style="margin-top: -5px;">
+                    <i class="bi bi-check fs-4 text-green" style="padding: 0px;"></i>
+                    <p style="font-size: 14px; margin: 0px; padding-left: 8px;">Bebas memilih mentor</p>
+                  </div>
+                  <div class="d-flex align-items-center" style="margin-top: -5px;">
+                    <i class="bi bi-check fs-4 text-green" style="padding: 0px;"></i>
+                    <p style="font-size: 14px; margin: 0px; padding-left: 8px;">5 kali pertemuan dalam 1 bulan</p>
+                  </div>
+                  <div class="d-flex align-items-center" style="margin-top: -5px;">
+                    <i class="bi bi-check fs-4 text-green" style="padding: 0px;"></i>
+                    <p style="font-size: 14px; margin: 0px; padding-left: 8px;">Menentukan jadwal les sesuai keinginan
+                      anda</p>
+                  </div>
+                  <div class="d-flex align-items-center" style="margin-top: -5px;">
+                    <i class="bi bi-check fs-4 text-green" style="padding: 0px;"></i>
+                    <p style="font-size: 14px; margin: 0px; padding-left: 8px;">Penerapan konsep ekonomi pada kegiatan
+                      sehari-hari</p>
+                  </div>
+                  <div class="d-flex align-items-center" style="margin-top: -5px;">
+                    <i class="bi bi-check fs-4 text-green" style="padding: 0px;"></i>
+                    <p style="font-size: 14px; margin: 0px; padding-left: 8px;">Sesi praktikum anatomi 1 kali</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md d-flex justify-content-center align-items-center">
+            <div class="card shadow m-4" style="width: 22rem; border-radius: 30px;">
+              <div class="card-body container-fluid"
+                style="background-image: url('/img/img-card.png'); background-size: cover; background-repeat: no-repeat; background-position: center; border-radius: 30px;">
+                <div class="row align-items-center mt-3 p-3">
+                  <div class="col-md-4 d-flex justify-content-center mx-2">
+                    <img src="/img/sejarah.png" alt="" width="80px">
+                  </div>
+                  <div class="col-md-7 d-flex flex-column justify-content-center" style="padding-left: 20px;">
+                    <p style="font-size: 14px; margin: 0px;"><b>Mata Pelajaran</b></p>
+                    <p style="font-size: 32px; margin: 0px;"><b>Sejarah</b></p>
+                  </div>
+                </div>
+                <div class="row p-3 mb-5" style="margin-top: -10px;">
+                  <p style="font-size: 12px; margin: 0px;">Jelajahi sejarah bersama Tech-mentor! Pecahkan misteri dan
+                    siapkan diri untuk pemahaman yang baru!</p>
+                </div>
+              </div>
+
+              <div class="card-body container-fluid p-4"
+                style="background-color: white; border-radius: 22px; margin-top: -50px;">
+                <div class="row align-items-center p-2">
+                  <p style="font-size: 12px; margin: 0px;">Paket Tahun Ajaran 2024/2025 <br> Mulai dari</p>
+                  <p style="font-size: 25px; margin: 0px; margin-bottom: -10px;">Rp 380.000/bulan</p>
+                </div>
+                <div class="row p-3">
+                  <button type="submit" class="btn btn-primary"
+                    style="background-image: linear-gradient(to right, #A3CCF5 , #2B75C0); border: 0px; border-radius: 50px; padding: 10px 30px 10px 30px; ;"><b>Beli</b></button>
+                </div>
+                <div class="row pb-3">
+                  <div class="d-flex align-items-center" style="margin-top: -5px;">
+                    <i class="bi bi-check fs-4 text-green" style="padding: 0px;"></i>
+                    <p style="font-size: 14px; margin: 0px; padding-left: 8px;">Bebas memilih mentor</p>
+                  </div>
+                  <div class="d-flex align-items-center" style="margin-top: -5px;">
+                    <i class="bi bi-check fs-4 text-green" style="padding: 0px;"></i>
+                    <p style="font-size: 14px; margin: 0px; padding-left: 8px;">6 kali pertemuan dalam 1 bulan</p>
+                  </div>
+                  <div class="d-flex align-items-center" style="margin-top: -5px;">
+                    <i class="bi bi-check fs-4 text-green" style="padding: 0px;"></i>
+                    <p style="font-size: 14px; margin: 0px; padding-left: 8px;">Sesi Intensif 1 kali saat UTS atau UAS
+                    </p>
+                  </div>
+                  <div class="d-flex align-items-center" style="margin-top: -5px;">
+                    <i class="bi bi-check fs-4 text-green" style="padding: 0px;"></i>
+                    <p style="font-size: 14px; margin: 0px; padding-left: 8px;">1 kali Sesi Test Evaluasi pembelajaran
+                    </p>
+                  </div>
+                  <div class="d-flex align-items-center" style="margin-top: -5px;">
+                    <i class="bi bi-check fs-4 text-green" style="padding: 0px;"></i>
+                    <p style="font-size: 14px; margin: 0px; padding-left: 8px;">Sesi Intensif 1 kali saat UTS atau UAS
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- row 3 -->
+        <div class="row justify-content-center my-4">
+          <div class="col-md-4 d-flex justify-content-center align-items-center">
+            <div class="card shadow m-4" style="width: 22rem; border-radius: 30px;">
+              <div class="card-body container-fluid"
+                style="background-image: url('/img/img-card.png'); background-size: cover; background-repeat: no-repeat; background-position: center; border-radius: 30px;">
+                <div class="row align-items-center mt-3 p-3">
+                  <div class="col-md-3 d-flex justify-content-center mx-2">
+                    <img src="/img/math.png" alt="" width="67px">
+                  </div>
+                  <div class="col-md-7 d-flex flex-column justify-content-center"
+                    style="padding-left: 12px; padding-right: 0px;">
+                    <p style="font-size: 14px; margin: 0px;"><b>Mata Pelajaran</b></p>
+                    <p style="font-size: 26px; margin: 0px;"><b>Matematika</b></p>
+                  </div>
+                </div>
+                <div class="row p-3 mb-5" style="margin-top: -10px;">
+                  <p style="font-size: 12px; margin: 0px;">Telusuri konsep matematika dengan mentor ahli! Temukan cara
+                    baru untuk memahami matematika dengan praktik yang mendalam!</p>
+                </div>
+              </div>
+
+              <div class="card-body container-fluid p-4"
+                style="background-color: white; border-radius: 22px; margin-top: -50px;">
+                <div class="row align-items-center p-2">
+                  <p style="font-size: 12px; margin: 0px;">Paket Tahun Ajaran 2024/2025 <br> Mulai dari</p>
+                  <p style="font-size: 25px; margin: 0px; margin-bottom: -10px;">Rp 450.000/bulan</p>
+                </div>
+                <div class="row p-3">
+                  <button type="submit" class="btn btn-primary"
+                    style="background-image: linear-gradient(to right, #A3CCF5 , #2B75C0); border: 0px; border-radius: 50px; padding: 10px 30px 10px 30px; ;"><b>Beli</b></button>
+                </div>
+                <div class="row pb-3">
+                  <div class="d-flex align-items-center" style="margin-top: -5px;">
+                    <i class="bi bi-check fs-4 text-green" style="padding: 0px;"></i>
+                    <p style="font-size: 14px; margin: 0px; padding-left: 8px;">Bebas memilih mentor</p>
+                  </div>
+                  <div class="d-flex align-items-center" style="margin-top: -5px;">
+                    <i class="bi bi-check fs-4 text-green" style="padding: 0px;"></i>
+                    <p style="font-size: 14px; margin: 0px; padding-left: 8px;">6 kali pertemuan dalam 1 bulan</p>
+                  </div>
+                  <div class="d-flex align-items-center" style="margin-top: -5px;">
+                    <i class="bi bi-check fs-4 text-green" style="padding: 0px;"></i>
+                    <p style="font-size: 14px; margin: 0px; padding-left: 8px;">Sesi Intensif 1 kali saat UTS atau UAS
+                    </p>
+                  </div>
+                  <div class="d-flex align-items-center" style="margin-top: -5px;">
+                    <i class="bi bi-check fs-4 text-green" style="padding: 0px;"></i>
+                    <p style="font-size: 14px; margin: 0px; padding-left: 8px;">Menentukan jadwal les sesuai keinginan
+                      anda</p>
+                  </div>
+                  <div class="d-flex align-items-center" style="margin-top: -5px;">
+                    <i class="bi bi-check fs-4 text-green" style="padding: 0px;"></i>
+                    <p style="font-size: 14px; margin: 0px; padding-left: 8px;">1 kali Sesi Test Evaluasi pembelajaran
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 d-flex justify-content-center align-items-center">
+            <div class="card shadow m-4" style="width: 22rem; border-radius: 30px;">
+              <div class="card-body container-fluid"
+                style="background-image: url('/img/img-card.png'); background-size: cover; background-repeat: no-repeat; background-position: center; border-radius: 30px;">
+                <div class="row align-items-center mt-3 p-3">
+                  <div class="col-md-3 d-flex justify-content-center mx-2">
+                    <img src="/img/english.png" alt="" width="67px">
+                  </div>
+                  <div class="col-md-7 d-flex flex-column justify-content-center"
+                    style="padding-left: 12px; padding-right: 0px;">
+                    <p style="font-size: 14px; margin: 0px;"><b>Mata Pelajaran</b></p>
+                    <p style="font-size: 26px; margin: 0px;"><b>B. Inggris</b></p>
+                  </div>
+                </div>
+                <div class="row p-3 mb-5" style="margin-top: -10px;">
+                  <p style="font-size: 12px; margin: 0px;">Kembangkan B. Inggris Anda! Dapatkan bimbingan pribadi untuk
+                    kemampuan berbicara, menulis, & memahami B. Inggris.</p>
+                </div>
+              </div>
+
+              <div class="card-body container-fluid p-4"
+                style="background-color: white; border-radius: 22px; margin-top: -50px;">
+                <div class="row align-items-center p-2">
+                  <p style="font-size: 12px; margin: 0px;">Paket Tahun Ajaran 2024/2025 <br> Mulai dari</p>
+                  <p style="font-size: 25px; margin: 0px; margin-bottom: -10px;">Rp 650.000/bulan</p>
+                </div>
+                <div class="row p-3">
+                  <button type="submit" class="btn btn-primary"
+                    style="background-image: linear-gradient(to right, #A3CCF5 , #2B75C0); border: 0px; border-radius: 50px; padding: 10px 30px 10px 30px; ;"><b>Beli</b></button>
+                </div>
+                <div class="row pb-3">
+                  <div class="d-flex align-items-center" style="margin-top: -5px;">
+                    <i class="bi bi-check fs-4 text-green" style="padding: 0px;"></i>
+                    <p style="font-size: 14px; margin: 0px; padding-left: 8px;">Bebas memilih mentor</p>
+                  </div>
+                  <div class="d-flex align-items-center" style="margin-top: -5px;">
+                    <i class="bi bi-check fs-4 text-green" style="padding: 0px;"></i>
+                    <p style="font-size: 14px; margin: 0px; padding-left: 8px;">5 kali pertemuan dalam 1 bulan</p>
+                  </div>
+                  <div class="d-flex align-items-center" style="margin-top: -5px;">
+                    <i class="bi bi-check fs-4 text-green" style="padding: 0px;"></i>
+                    <p style="font-size: 14px; margin: 0px; padding-left: 8px;">Menentukan jadwal les sesuai keinginan
+                      anda</p>
+                  </div>
+                  <div class="d-flex align-items-center" style="margin-top: -5px;">
+                    <i class="bi bi-check fs-4 text-green" style="padding: 0px;"></i>
+                    <p style="font-size: 14px; margin: 0px; padding-left: 8px;">Sesi Intensif 1 kali saat UTS atau UAS
+                    </p>
+                  </div>
+                  <div class="d-flex align-items-center" style="margin-top: -5px;">
+                    <i class="bi bi-check fs-4 text-green" style="padding: 0px;"></i>
+                    <p style="font-size: 14px; margin: 0px; padding-left: 8px;">Test uji coba Toefl 1 kali</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+
+    <div class="container-fluid" style="padding: 0px;">
+      <a href="#" style="padding: 0px;">
+        <img src="/img/mentor-partner.png" alt="" width="100%" height="100%" style="padding: 0px;">
+      </a>
+    </div>
+
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container-fluid bg-blue5">
+      <div class="container">
+        <div class="row text-white pt-4">
+          <div class="col-md-5 p-4">
+            <img src="/img/Logo.png" alt="" width="50%" class="p-4">
+            <p class="p-4">
+              Penyedia layanan bimbel offline dengan menjadi perantara antara siswa dan guru untuk memperluas akses
+              siswa dalam mencari gulu les offline dan meningkatkan motivasi belajar siswa di Indonesia.
+            </p>
+          </div>
+
+          <div class="col-md-4 p-4">
+            <div class="row py-3">
+              <h5><b>The Student Site</b></h5>
+              <a href="#" class="text-decoration-none text-white">
+                <p>TeachLink Playground</p>
+              </a>
+            </div>
+            <div class="row py-3">
+              <h5><b>Gabung Mitra</b></h5>
+              <a href="#" class="text-decoration-none text-white">
+                <p>TeachLink Playground</p>
+              </a>
+            </div>
+            <div class="row py-3">
+              <h5><b>Tentang TeachLink</b></h5>
+              <a href="#" class="text-decoration-none text-white">
+                <p>Media</p>
+              </a>
+              <a href="#" class="text-decoration-none text-white">
+                <p>Karier</p>
+              </a>
+              <a href="#" class="text-decoration-none text-white">
+                <p>FAQ</p>
+              </a>
+            </div>
+          </div>
+
+          <div class="col-md-3 p-4">
+            <div class="hstack gap-2 py-3">
+              <a href="#"><img src="/img/linkedin.png" alt="" width="60%"></a>
+              <a href="#"><img src="/img/facebook.png" alt="" width="60%"></a>
+              <a href="#"><img src="/img/instagram.png" alt="" width="60%"></a>
+            </div>
+            <div class="row py-3">
+              <h5 class="pb-3"><b>PT TeachLink</b></h5>
+              <p>Jl. Ketintang No.156, Ketintang, Kec. Gayungan, Surabaya, Jawa Timur 60231</p>
+            </div>
+            <div class="row py-3">
+              <h5 class="pb-3"><b>Customer Service</b></h5>
+              <p><i class="bi bi-whatsapp me-2"></i> 085853848367</p>
+              <p><i class="bi bi-envelope me-2"></i> teachlinkid@gmail.com</p>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md text-white">
+            <hr style="border-width: 2px;">
+            <p class="p-4">© 2024. All rights reserved</p>
+          </div>
+        </div>
+      </div>
+  </footer>
+
+
+</body>
+
+</html>
