@@ -39,13 +39,15 @@
       <div class="container text-start">
         <div class="row mb-4">
           <div class="col-md-9 d-flex align-items-center">
-            <img src="/img/back-icon.png" alt="" width="24px" class="me-3">
-            <h4 class="text-white mt-2">
-              Pembayaran
-            </h4>
+            <a onclick="history.back()" class="hstack text-decoration-none">
+              <img src="/img/back-icon.png" alt="" width="24px" class="me-3">
+              <h4 class="text-white mt-2">
+                Pembayaran
+              </h4>
+            </a>
           </div>
           <div class="col-md">
-            <a href="" class="text-decoration-none text-white">
+            <a onclick="history.back()" class="text-decoration-none text-white">
               <h4>Hello, Tech-verse<i class="bi bi-box-arrow-right ms-2"></i></h4>
             </a>
           </div>
@@ -53,8 +55,6 @@
       </div>
     </div>
   </section>
-
-
 
   <!-- Paket -->
   <section class="py-3 container-fluid" style="background-color: #F5F5F5 ; border-radius: 27px; margin-top: -20px ;">
@@ -66,8 +66,7 @@
             <div class="accordion-item rounded-5">
               <h2 class="accordion-header">
                 <button class="accordion-button collapsed rounded-5" type="button" data-bs-toggle="collapse"
-                  data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="false"
-                  aria-controls="panelsStayOpen-collapseOne">
+                  data-bs-target="#collapsePaket" aria-expanded="false" aria-controls="collapsePaket">
                   <div class="accordion-header-content w-100">
                     <div class="row">
                       <div class="col-md-9">
@@ -85,7 +84,7 @@
                   </div>
                 </button>
               </h2>
-              <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse">
+              <div id="collapsePaket" class="accordion-collapse collapse">
                 <div class="accordion-body">
                   <h5 class="my-3 text-start">Paket Saat ini:</h5>
                   <div class="row text-start">
@@ -116,7 +115,7 @@
                     <div class="col-md">
                       <div class="row">
                         <div class="col-md">
-                            <p class="mb-0"><b>Poin</b></p>
+                          <p class="mb-0"><b>Poin</b></p>
                           <p class="text-tertiary mb-0" style="font-size: 12px;">Jumlah : 0</p>
                         </div>
                       </div>
@@ -210,21 +209,33 @@
             <div class="accordion-item rounded-5">
               <h2 class="accordion-header">
                 <button class="accordion-button rounded-5" type="button" data-bs-toggle="collapse"
-                  data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="false"
-                  aria-controls="panelsStayOpen-collapseOne">
+                  data-bs-target="#collapseDiskon" aria-expanded="false" aria-controls="collapseDiskon">
                   <div class="col-md hstack gap-3">
                     <img src="/img/discount.png" alt="" width="50px">
                     <h5 class="mt-2">Makin Hemat Dengan Kode Diskon</h5>
                   </div>
                 </button>
               </h2>
-              <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse">
+              <div id="collapseDiskon" class="accordion-collapse collapse">
                 <div class="accordion-body">
-                  <p align="justify" style="color: #7A7979;">
-                    Tech-Mentor adalah sebuah sebutan para mentor atau guru yang telah menjadi pengajar di Techlink
-                    serta sebuah program kerjasama antara para pengajar dan Techlink untuk membawa lingkungan dan
-                    suasana pembelajaran baru bagi para siswa di Indonesia.
-                  </p>
+                  <div class="container text-start">
+                    <h5 class="my-2">Kode Promo/Referral</h5>
+                    <form action="" class="hstack gap-3">
+                      <input type="email" class="form-control rounded-pill my-3" id="exampleFormControlInput1"
+                        placeholder="Masukkan Kode Promo/Referral" style="background-color: #ECECEC;">
+                      <a href="#" class="btn btn-primary" role="button"
+                        style="background-image: linear-gradient(to right, #A3CCF5, #2B75C0); border: 0px; border-radius: 50px; padding: 10px 30px 10px 30px;">
+                        <b>Pakai</b>
+                      </a>
+                    </form>
+                    <hr>
+                    <h5 class="my-2">Kode Promo/Referral</h5>
+                    <p class="text-tertiary">Pilih voucher promo kamu dan nikmati paket belajar dengan harga super
+                      murah!</p>
+                    <div class="d-flex justify-content-center">
+                      <img src="/img/tidak-promo.png" alt="" class="py-3">
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -240,21 +251,36 @@
             <div class="accordion-item rounded-5">
               <h2 class="accordion-header">
                 <button class="accordion-button rounded-5" type="button" data-bs-toggle="collapse"
-                  data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="false"
-                  aria-controls="panelsStayOpen-collapseOne">
+                  data-bs-target="#collapseKontak" aria-expanded="false"
+                  aria-controls="collapseKontak">
                   <div class="col-md hstack gap-3">
                     <img src="/img/Email.png" alt="" width="44px">
                     <h5 class="mt-2">Beritahu Paket Ini ke Orang Tua/Wali</h5>
                   </div>
                 </button>
               </h2>
-              <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse">
-                <div class="accordion-body">
-                  <p align="justify" style="color: #7A7979;">
-                    Tech-Mentor adalah sebuah sebutan para mentor atau guru yang telah menjadi pengajar di Techlink
-                    serta sebuah program kerjasama antara para pengajar dan Techlink untuk membawa lingkungan dan
-                    suasana pembelajaran baru bagi para siswa di Indonesia.
-                  </p>
+              <div id="collapseKontak" class="accordion-collapse collapse">
+                <div class="accordion-body text-start">
+                  <h5 class="my-2">Kontak Orang tua/Wali</h5>
+                  <form action="">
+                    <label for="exampleFormControlInput1" class="form-label text-tertiary mb-0">Nama Orang
+                      tua/Wali</label>
+                    <input type="email" class="form-control rounded-pill my-3" id="exampleFormControlInput1"
+                      placeholder="Tuliskan Nama Orang tua/Wali" style="background-color: #ECECEC;">
+                    <label for="exampleFormControlInput1" class="form-label text-tertiary mb-0">Email</label>
+                    <input type="email" class="form-control rounded-pill my-3" id="exampleFormControlInput1"
+                      placeholder="Tuliskan Email Orang tua/Wali" style="background-color: #ECECEC;">
+                    <div class="mt-4">
+                      <a href="#" class="btn btn-primary d-grid" role="button"
+                        style="background-image: linear-gradient(to right, #A3CCF5, #2B75C0); border: 0px; border-radius: 50px; padding: 10px 30px 10px 30px;">
+                        <b>Simpan</b>
+                      </a>
+                      <a href="#" class="btn d-grid" role="button"
+                        style="border: 0px; border-radius: 50px; padding: 10px 30px 10px 30px;">
+                        <b>Batal</b>
+                      </a>
+                    </div>
+                  </form>
                 </div>
               </div>
             </div>
@@ -290,7 +316,7 @@
           <p class="mb-0 text-end" style="font-size: 12px;">*Sudah termasuk PPN</p>
         </div>
         <div class="row justify-content-center mt-4">
-          <a href="#" class="btn btn-primary" role="button"
+          <a href="/metode-pembayaran.html" class="btn btn-primary" role="button"
             style="background-image: linear-gradient(to right, #A3CCF5, #2B75C0); border: 0px; border-radius: 50px; padding: 10px 30px 10px 30px;">
             <b>Pilih Metode Pembayaran</b>
           </a>
@@ -304,7 +330,7 @@
   <script>
     document.addEventListener('DOMContentLoaded', function () {
       var accordionButton = document.querySelector('.accordion-button');
-      var accordionCollapse = document.getElementById('panelsStayOpen-collapseOne');
+      var accordionCollapse = document.getElementById('collapsePaket');
       var accordionHeaderContent = document.querySelector('.accordion-header-content');
 
       accordionCollapse.addEventListener('show.bs.collapse', function () {

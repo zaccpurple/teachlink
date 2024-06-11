@@ -17,11 +17,12 @@
     rel="stylesheet">
   <link rel="stylesheet" href="/css/style.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="icon" type="image/x-icon" href="/img/favicon.png" src="/img/favicon.png">
 </head>
 
 <body>
   <div class="container-fluid p-0" style="background-color: transparent;">
-    <a href="/claim" class="d-block">
+    <a href="#" class="d-block">
       <img src="/img/Ads.png" alt="Ads Banner" class="img-fluid w-100">
     </a>
   </div>
@@ -38,19 +39,37 @@
       <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
         <ul class="navbar-nav gap-5">
           <li class="nav-item">
-            <a class="nav-link text-blue-5 active" aria-current="page" href="#"><b>Beranda</b></a>
+            <a class="nav-link text-blue-5 active" aria-current="page" href="/login/index.html"><b>Beranda</b></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#"><b>Tentang Kami</b></a>
+            <a class="nav-link" href="/login/tentang-kami.html"><b>Tentang Kami</b></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#"><b>Layanan</b></a>
+            <a class="nav-link" href="/login/layanan.html"><b>Layanan</b></a>
           </li>
         </ul>
       </div>
       <div class="d-flex ms-auto">
-        <a class="btn me-2 text-blue-5" href="#" role="button"><b>Daftar</b></a>
-        <a class="btn btn-primary" href="masuk.html" role="button">Masuk</a>
+        <div class="dropdown">
+          <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <i class="bi bi-globe me-2"></i> <b>Bahasa</b>
+          </button>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Indonesia</a></li>
+            <li><a class="dropdown-item" href="#">Inggris</a></li>
+          </ul>
+        </div>
+        <div class="dropdown">
+          <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <b>Salsa</b>
+          </button>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="/login/Akun.html">Akun</a></li>
+            <li><a class="dropdown-item" href="/riwayat.html">Transaksi</a></li>
+            <li><a class="dropdown-item" href="/not-login/index.html">Logout</a></li>
+          </ul>
+        </div>
+        <a class="btn text-blue-5" href="/layanan-mentor.html" role="button"><b>For Mentor</b></a>
       </div>
     </div>
   </nav>
@@ -401,7 +420,7 @@
           </div>
         </div>
       </div>
-    </footer>
+  </footer>
 
 
 </body>

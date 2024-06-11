@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Techlink</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+  <style>
+    .accordion-button {
+      border-radius: 50px;
+    }
+
+    .accordion-body {
+      border-bottom-left-radius: 50px;
+      border-bottom-right-radius: 50px;
+    }
+  </style>
+
+</head>
+
+<body>
+  <!-- Hero -->
+  <section>
+    <div class="container-fluid p-0 d-flex flex-column justify-content-center"
+      style="background-image: linear-gradient(to right, #92BFE4 , #2A7EC2); height: 200px;">
+      <div class="container text-start">
+        <div class="row mb-4">
+          <div class="col-md-9 d-flex align-items-center">
+            <a onclick="history.back()" class="hstack text-decoration-none">
+              <img src="/img/back-icon.png" alt="" width="24px" class="me-3">
+              <h4 class="text-white mt-2">
+                Pilihan metode pembayaran
+              </h4>
+            </a>
+          </div>
+          <div class="col-md">
+            <a href="/login/index.html" class="text-decoration-none text-white">
+              <h4>Hello, Tech-verse<i class="bi bi-box-arrow-right ms-2"></i></h4>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <!-- Paket -->
+  <section class="py-3 container-fluid" style="background-color: #F5F5F5 ; border-radius: 27px; margin-top: -20px ;">
+
+    <div class="container my-5">
+      <div class="row py-3">
+        <div class="d-flex justify-content-between w-100">
+          <h4 class="mb-0"><b>Total Pembayaran</b></h4>
+          <h3 class="mb-0 text-success"><b>Rp 450.000</b></h3>
+        </div>
+        <hr class="my-4">
+      </div>
+      <div class="row">
+        <h5><b>Pilih Metode Pembayaran</b></h5>
+      </div>
+      <div class="row">
+
+        <div class="accordion accordion-flush" id="accordionFlushExample">
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed text-tertiary" type="button" data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne"
+                style="background-color: #F5F5F5 !important;">
+                <b>E-Wallet</b>
+              </button>
+            </h2>
+            <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample"
+              style="background-color: #F5F5F5 !important;">
+              <div class="accordion-body">Belum Support E-Wallet
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed text-tertiary" type="button" data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo"
+                style="background-color: #F5F5F5 !important;">
+                <b>Virtual Account</b>
+              </button>
+            </h2>
+            <div id="flush-collapseTwo" class="accordion-collapse collapse show" data-bs-parent="#accordionFlushExample"
+              style="background-color: #F5F5F5 !important;">
+              <div class="accordion-body">
+
+                <!-- 1 -->
+                <section class="container my-3">
+                  <div class="row justify-content-center">
+                    <div class="col-md text-white text-center">
+                      <div class="accordion" id="accordionPanelsStayOpenExample">
+                        <div class="accordion-item rounded-5">
+                          <h2 class="accordion-header">
+                            <button class="accordion-button collapsed rounded-5" type="button" data-bs-toggle="collapse"
+                              data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="false"
+                              aria-controls="panelsStayOpen-collapseOne">
+                              <div class="accordion-header-content w-100">
+                                <div class="row align-items-center">
+                                  <div class="col-md-9">
+                                    <img src="/img/bca.png" alt="" width="100px">
+                                  </div>
+                                  <div class="col-md ms-auto text-right">
+                                    <h5 class="mt-3">BCA Virtual Account</h5>
+                                  </div>
+                                </div>
+                              </div>
+                            </button>
+                          </h2>
+                          <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show">
+                            <div class="accordion-body">
+                              <h5 class="my-3 text-center">Pembayaran dengan BCA Virtual Account</h5>
+
+                              <div class="row pb-3">
+                                <div class="d-flex align-items-center" style="margin-top: 5px;">
+                                  <i class="bi bi-exclamation-circle-fill text-warning" style="padding: 0px;"></i>
+                                  <p style="font-size: 15px; margin: 0px; padding-left: 8px;">Lihat panduan pembayaran
+                                    di BCA Virtuan Account <a href="">disini</a></p>
+                                </div>
+                                <div class="d-flex align-items-center" style="margin-top: 5px;">
+                                  <i class="bi bi-exclamation-circle-fill text-warning" style="padding: 0px;"></i>
+                                  <p style="font-size: 15px; margin: 0px; padding-left: 8px;">BCA Virtual Account hanya
+                                    dapat dibayar melalui ATM BCA, Teller Bank BCA, M-banking BCA, Klik BCA</p>
+                                </div>
+                              </div>
+
+                              <div class="row justify-content-center mt-4">
+                                <a href="#" class="btn btn-primary" type="button" data-bs-toggle="modal" data-bs-target="#staticBackdrop"
+                                style="background-image: linear-gradient(to right, #A3CCF5, #2B75C0); border: 0px;
+                                  border-radius: 50px; padding: 10px 30px 10px 30px;">
+                                  <b>Lakukan Pembayaran</b>
+                                </a>
+                              </div>
+                            </div>
+                          </div>
+
+                          <!-- Modal -->
+                          <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false"
+                            tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered">
+                              <div class="modal-content">
+                                <div class="modal-header" style="background-color: #8CBDE4;">
+                                  <h1 class="modal-title fs-5" id="staticBackdropLabel">Teachlink</h1>
+                                </div>
+                                <div class="modal-body"  style="background-color: #EEEEEE;">
+                                  <div class="container-fluid">
+                                    <div class="container">
+                                      <div class="row">
+                                        <div class="col-md hstack">
+                                          <p class="mb-0">Total</p>
+                                          <p class="mb-0 ms-auto text-blue-4" style="font-size: 12px;">Bayar dalam  23:59:44</p>
+                                        </div>
+                                      </div>
+                                      <div class="row text-start">
+                                        <div class="col-md">
+                                          <h4 class="mb-0"><b>Rp 450.000</b></h4>
+                                          <p class="text-tertiary mb-0">Order ID #1139033182582</p>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="modal-body"  style="margin-bottom: 100px;">
+                                  <div class="container-fluid">
+                                    <div class="container text-start">
+                                      <div class="row">
+                                        <div class="col-md hstack">
+                                          <h4 class="mb-0">Bank BCA</h4>
+                                          <img src="/img/bca.png" alt="" class="ms-auto" width="80px">
+                                        </div>
+                                      </div>
+                                      <div class="row text-start">
+                                        <div class="col-md">
+                                          <p class="my-3 text-tertiary">Lakukan pembayaran dari rekening bank BCA ke nomor Virtual Account berikut:</p>
+                                          <p class="mb-0 text-tertiary" style="font-size: 14px;">Nomor virtual account</p>
+                                          <h5><b>30521876521</b></h5>
+                                          <hr>
+                                          <a href="" class="text-decoration-none"><h6 class="text-blue-4"><b>Cara Bayar</b></h6></a>
+                                          
+                                          <hr>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="modal-footer justify-content-center d-grid">
+                                  <a href="#" class="btn btn-primary" data-bs-dismiss="modal" style="background-image: linear-gradient(to right, #A3CCF5, #2B75C0); border: 0px;
+                                  border-radius: 50px; padding: 10px 200px 10px 200px;">
+                                    <b>Tutup</b>
+                                  </a>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </section>
+
+                <!-- 2 -->
+                <section class="container my-3">
+                  <div class="row justify-content-center">
+                    <div class="col-md text-white text-center">
+                      <div class="accordion" id="accordionPanelsStayOpenExample">
+                        <div class="accordion-item rounded-5">
+                          <h2 class="accordion-header">
+                            <button class="accordion-button collapsed rounded-5" type="button" data-bs-toggle="collapse"
+                              data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                              <div class="accordion-header-content w-100">
+                                <div class="row align-items-center">
+                                  <div class="col-md-9">
+                                    <img src="/img/mandiri.png" alt="" width="120px">
+                                  </div>
+                                  <div class="col-md ms-auto text-right">
+                                    <h5 class="mt-3">Mandiri Virtual Account</h5>
+                                  </div>
+                                </div>
+                              </div>
+                            </button>
+                          </h2>
+                          <div id="collapseTwo" class="accordion-collapse collapse">
+                            <div class="accordion-body">
+                              <h5 class="my-3 text-center">Pembayaran dengan Mandiri Virtual Account</h5>
+
+                              <div class="row pb-3">
+                                <div class="d-flex align-items-center" style="margin-top: 5px;">
+                                  <i class="bi bi-exclamation-circle-fill text-warning" style="padding: 0px;"></i>
+                                  <p style="font-size: 15px; margin: 0px; padding-left: 8px;">Lihat panduan pembayaran
+                                    di Mandiri Virtuan Account <a href="">disini</a></p>
+                                </div>
+                                <div class="d-flex align-items-center" style="margin-top: 5px;">
+                                  <i class="bi bi-exclamation-circle-fill text-warning" style="padding: 0px;"></i>
+                                  <p style="font-size: 15px; margin: 0px; padding-left: 8px;">Mandiri Virtual Account
+                                    hanya dapat dibayar melalui ATM Mandiri, Teller Bank Mandiri, M-banking Mandiri,
+                                    Klik Mandiri</p>
+                                </div>
+                              </div>
+
+                              <div class="row justify-content-center mt-4">
+                                <a href="#" class="btn btn-primary" type="button" data-bs-toggle="modal" data-bs-target="#staticBackdrop2"
+                                  style="background-image: linear-gradient(to right, #A3CCF5, #2B75C0); border: 0px; border-radius: 50px; padding: 10px 30px 10px 30px;">
+                                  <b>Lakukan Pembayaran</b>
+                                </a>
+                              </div>
+                            </div>
+                          </div>
+
+                          <!-- Modal -->
+                          <div class="modal fade" id="staticBackdrop2" data-bs-backdrop="static" data-bs-keyboard="false"
+                            tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered">
+                              <div class="modal-content">
+                                <div class="modal-header" style="background-color: #8CBDE4;">
+                                  <h1 class="modal-title fs-5" id="staticBackdropLabel">Teachlink</h1>
+                                </div>
+                                <div class="modal-body"  style="background-color: #EEEEEE;">
+                                  <div class="container-fluid">
+                                    <div class="container">
+                                      <div class="row">
+                                        <div class="col-md hstack">
+                                          <p class="mb-0">Total</p>
+                                          <p class="mb-0 ms-auto text-blue-4" style="font-size: 12px;">Bayar dalam  23:59:44</p>
+                                        </div>
+                                      </div>
+                                      <div class="row text-start">
+                                        <div class="col-md">
+                                          <h4 class="mb-0"><b>Rp 450.000</b></h4>
+                                          <p class="text-tertiary mb-0">Order ID #1139033182582</p>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="modal-body"  style="margin-bottom: 100px;">
+                                  <div class="container-fluid">
+                                    <div class="container text-start">
+                                      <div class="row">
+                                        <div class="col-md hstack">
+                                          <h4 class="mb-0">Bank Mandiri</h4>
+                                          <img src="/img/mandiri.png" alt="" class="ms-auto" width="80px">
+                                        </div>
+                                      </div>
+                                      <div class="row text-start">
+                                        <div class="col-md">
+                                          <p class="my-3 text-tertiary">Lakukan pembayaran dari rekening bank Mandiri ke nomor Virtual Account berikut:</p>
+                                          <p class="mb-0 text-tertiary" style="font-size: 14px;">Nomor virtual account</p>
+                                          <h5><b>30521876521</b></h5>
+                                          <hr>
+                                          <a href="" class="text-decoration-none"><h6 class="text-blue-4"><b>Cara Bayar</b></h6></a>
+                                          <hr>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="modal-footer justify-content-center d-grid">
+                                  <a href="#" class="btn btn-primary" data-bs-dismiss="modal" style="background-image: linear-gradient(to right, #A3CCF5, #2B75C0); border: 0px;
+                                  border-radius: 50px; padding: 10px 200px 10px 200px;">
+                                    <b>Tutup</b>
+                                  </a>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </section>
+
+                <!-- 3 -->
+                <section class="container my-3">
+                  <div class="row justify-content-center">
+                    <div class="col-md text-white text-center">
+                      <div class="accordion" id="accordionPanelsStayOpenExample">
+                        <div class="accordion-item rounded-5">
+                          <h2 class="accordion-header">
+                            <button class="accordion-button collapsed rounded-5" type="button" data-bs-toggle="collapse"
+                              data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                              <div class="accordion-header-content w-100">
+                                <div class="row align-items-center">
+                                  <div class="col-md-9">
+                                    <img src="/img/bni.png" alt="" width="100px">
+                                  </div>
+                                  <div class="col-md ms-auto text-right">
+                                    <h5 class="mt-3">BNI Virtual Account</h5>
+                                  </div>
+                                </div>
+                              </div>
+                            </button>
+                          </h2>
+                          <div id="collapseThree" class="accordion-collapse collapse">
+                            <div class="accordion-body">
+                              <h5 class="my-3 text-center">Pembayaran dengan BNI Virtual Account</h5>
+
+                              <div class="row pb-3">
+                                <div class="d-flex align-items-center" style="margin-top: 5px;">
+                                  <i class="bi bi-exclamation-circle-fill text-warning" style="padding: 0px;"></i>
+                                  <p style="font-size: 15px; margin: 0px; padding-left: 8px;">Lihat panduan pembayaran
+                                    di BNI Virtuan Account <a href="">disini</a></p>
+                                </div>
+                                <div class="d-flex align-items-center" style="margin-top: 5px;">
+                                  <i class="bi bi-exclamation-circle-fill text-warning" style="padding: 0px;"></i>
+                                  <p style="font-size: 15px; margin: 0px; padding-left: 8px;">BNI Virtual Account hanya
+                                    dapat dibayar melalui ATM BNI, Teller Bank BNI, M-banking BNI, Klik BNI</p>
+                                </div>
+                              </div>
+
+                              <div class="row justify-content-center mt-4">
+                                <a href="#" class="btn btn-primary" type="button" data-bs-toggle="modal" data-bs-target="#staticBackdrop3"
+                                  style="background-image: linear-gradient(to right, #A3CCF5, #2B75C0); border: 0px; border-radius: 50px; padding: 10px 30px 10px 30px;">
+                                  <b>Lakukan Pembayaran</b>
+                                </a>
+                              </div>
+                            </div>
+                          </div>
+
+                          <!-- Modal -->
+                          <div class="modal fade" id="staticBackdrop3" data-bs-backdrop="static" data-bs-keyboard="false"
+                            tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered">
+                              <div class="modal-content">
+                                <div class="modal-header" style="background-color: #8CBDE4;">
+                                  <h1 class="modal-title fs-5" id="staticBackdropLabel">Teachlink</h1>
+                                </div>
+                                <div class="modal-body"  style="background-color: #EEEEEE;">
+                                  <div class="container-fluid">
+                                    <div class="container">
+                                      <div class="row">
+                                        <div class="col-md hstack">
+                                          <p class="mb-0">Total</p>
+                                          <p class="mb-0 ms-auto text-blue-4" style="font-size: 12px;">Bayar dalam  23:59:44</p>
+                                        </div>
+                                      </div>
+                                      <div class="row text-start">
+                                        <div class="col-md">
+                                          <h4 class="mb-0"><b>Rp 450.000</b></h4>
+                                          <p class="text-tertiary mb-0">Order ID #1139033182582</p>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="modal-body"  style="margin-bottom: 100px;">
+                                  <div class="container-fluid">
+                                    <div class="container text-start">
+                                      <div class="row">
+                                        <div class="col-md hstack">
+                                          <h4 class="mb-0">Bank BNI</h4>
+                                          <img src="/img/bni.png" alt="" class="ms-auto" width="80px">
+                                        </div>
+                                      </div>
+                                      <div class="row text-start">
+                                        <div class="col-md">
+                                          <p class="my-3 text-tertiary">Lakukan pembayaran dari rekening bank BNI ke nomor Virtual Account berikut:</p>
+                                          <p class="mb-0 text-tertiary" style="font-size: 14px;">Nomor virtual account</p>
+                                          <h5><b>30521876521</b></h5>
+                                          <hr>
+                                          <a href="" class="text-decoration-none"><h6 class="text-blue-4"><b>Cara Bayar</b></h6></a>
+                                          
+                                          <hr>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="modal-footer justify-content-center d-grid">
+                                  <a href="#" class="btn btn-primary" data-bs-dismiss="modal" style="background-image: linear-gradient(to right, #A3CCF5, #2B75C0); border: 0px;
+                                  border-radius: 50px; padding: 10px 200px 10px 200px;">
+                                    <b>Tutup</b>
+                                  </a>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </section>
+
+                <!-- 4 -->
+                <section class="container my-3">
+                  <div class="row justify-content-center">
+                    <div class="col-md text-white text-center">
+                      <div class="accordion" id="accordionPanelsStayOpenExample">
+                        <div class="accordion-item rounded-5">
+                          <h2 class="accordion-header">
+                            <button class="accordion-button collapsed rounded-5" type="button" data-bs-toggle="collapse"
+                              data-bs-target="#collapseFourth" aria-expanded="false" aria-controls="collapseFourth">
+                              <div class="accordion-header-content w-100">
+                                <div class="row align-items-center">
+                                  <div class="col-md-9">
+                                    <img src="/img/bri.png" alt="" width="100px">
+                                  </div>
+                                  <div class="col-md ms-auto text-right">
+                                    <h5 class="mt-3">BRI Virtual Account</h5>
+                                  </div>
+                                </div>
+                              </div>
+                            </button>
+                          </h2>
+                          <div id="collapseFourth" class="accordion-collapse collapse">
+                            <div class="accordion-body">
+                              <h5 class="my-3 text-center">Pembayaran dengan BRI Virtual Account</h5>
+
+                              <div class="row pb-3">
+                                <div class="d-flex align-items-center" style="margin-top: 5px;">
+                                  <i class="bi bi-exclamation-circle-fill text-warning" style="padding: 0px;"></i>
+                                  <p style="font-size: 15px; margin: 0px; padding-left: 8px;">Lihat panduan pembayaran
+                                    di BRI Virtuan Account <a href="">disini</a></p>
+                                </div>
+                                <div class="d-flex align-items-center" style="margin-top: 5px;">
+                                  <i class="bi bi-exclamation-circle-fill text-warning" style="padding: 0px;"></i>
+                                  <p style="font-size: 15px; margin: 0px; padding-left: 8px;">BRI Virtual Account hanya
+                                    dapat dibayar melalui ATM BRI, Teller Bank BRI, M-banking BRI, Klik BRI</p>
+                                </div>
+                              </div>
+
+                              <div class="row justify-content-center mt-4">
+                                <a href="#" class="btn btn-primary" type="button" data-bs-toggle="modal" data-bs-target="#staticBackdrop4"
+                                  style="background-image: linear-gradient(to right, #A3CCF5, #2B75C0); border: 0px; border-radius: 50px; padding: 10px 30px 10px 30px;">
+                                  <b>Lakukan Pembayaran</b>
+                                </a>
+                              </div>
+                            </div>
+                          </div>
+
+                          <!-- Modal -->
+                          <div class="modal fade" id="staticBackdrop4" data-bs-backdrop="static" data-bs-keyboard="false"
+                            tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered">
+                              <div class="modal-content">
+                                <div class="modal-header" style="background-color: #8CBDE4;">
+                                  <h1 class="modal-title fs-5" id="staticBackdropLabel">Teachlink</h1>
+                                </div>
+                                <div class="modal-body"  style="background-color: #EEEEEE;">
+                                  <div class="container-fluid">
+                                    <div class="container">
+                                      <div class="row">
+                                        <div class="col-md hstack">
+                                          <p class="mb-0">Total</p>
+                                          <p class="mb-0 ms-auto text-blue-4" style="font-size: 12px;">Bayar dalam  23:59:44</p>
+                                        </div>
+                                      </div>
+                                      <div class="row text-start">
+                                        <div class="col-md">
+                                          <h4 class="mb-0"><b>Rp 450.000</b></h4>
+                                          <p class="text-tertiary mb-0">Order ID #1139033182582</p>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="modal-body"  style="margin-bottom: 100px;">
+                                  <div class="container-fluid">
+                                    <div class="container text-start">
+                                      <div class="row">
+                                        <div class="col-md hstack">
+                                          <h4 class="mb-0">Bank BRI</h4>
+                                          <img src="/img/bri.png" alt="" class="ms-auto" width="80px">
+                                        </div>
+                                      </div>
+                                      <div class="row text-start">
+                                        <div class="col-md">
+                                          <p class="my-3 text-tertiary">Lakukan pembayaran dari rekening bank BRI ke nomor Virtual Account berikut:</p>
+                                          <p class="mb-0 text-tertiary" style="font-size: 14px;">Nomor virtual account</p>
+                                          <h5><b>30521876521</b></h5>
+                                          <hr>
+                                          <a href="" class="text-decoration-none"><h6 class="text-blue-4"><b>Cara Bayar</b></h6></a>
+                                          
+                                          <hr>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="modal-footer justify-content-center d-grid">
+                                  <a href="#" class="btn btn-primary" data-bs-dismiss="modal" style="background-image: linear-gradient(to right, #A3CCF5, #2B75C0); border: 0px;
+                                  border-radius: 50px; padding: 10px 200px 10px 200px;">
+                                    <b>Tutup</b>
+                                  </a>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </section>
+
+
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+
+  </section>
+
+</body>
+
+<script>
+  const myModal = document.getElementById('myModal')
+  const myInput = document.getElementById('myInput')
+
+  myModal.addEventListener('shown.bs.modal', () => {
+    myInput.focus()
+  })
+</script>
+
+</html>
